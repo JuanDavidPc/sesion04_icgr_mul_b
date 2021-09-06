@@ -1,0 +1,39 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+   <title>Ejercicio 514</title>
+</head>
+<body>
+   <canvas id="lineas" width="300px" heigth="300px" style="border: 2px solid gray;"></canvas>
+
+   <script>
+      window.addEventListener('load', () => {
+      let canvasLineas = document.getElementById('lineas');
+      let ctx = canvasLineas.getContext('2d');
+
+      ctx.beginPath();    
+      ctx.strokeStyle = 'crimson';
+      ctx.moveTo(20, 100);
+      ctx.lineTo(145, 50); 
+      ctx.stroke(); 
+      
+      ctx.beginPath();    
+      ctx.strokeStyle = 'green';
+      ctx.moveTo(150, 20);
+      ctx.lineTo(146, 50); 
+      ctx.stroke(); 
+
+      
+      ctx.beginPath();    
+      ctx.strokeStyle = 'red';
+      ctx.moveTo(6, 20);
+      ctx.lineTo(145, 50); 
+      ctx.stroke(); 
+      });
+   </script>
+</body>
+</html> 
